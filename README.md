@@ -62,15 +62,15 @@ Sistema completo de cadastro e gerenciamento de **Eventos** e **Instituições**
 
 java -version
 
-Saída esperada:
+**Saída esperada:**
 
 openjdk version "1.8.0_xxx"
 
-Apache Maven
+**Apache Maven**
 
 https://maven.apache.org/download.cgi
 
-Verificar instalação:
+**Verificar instalação:**
 
 mvn -version
 
@@ -82,7 +82,7 @@ Baixe o arquivo zip (Core: 64-bit Windows zip ou equivalente para seu SO)
 
 Extraia em uma pasta de sua preferência (ex: C:\apache-tomcat-9.0.x)
 
-Como Rodar o Projeto:
+**Como Rodar o Projeto:**
 
 git clone https://github.com/HermesEdu-code/event-management-system.git
 
@@ -92,7 +92,7 @@ Compilar o projeto com Maven
 
 Na raiz do projeto, execute: mvn clean package
 
-Resultado esperado:
+**Resultado esperado:**
 
 Arquivo gerado em target/event-management-system.war
 
@@ -151,12 +151,12 @@ C:\apache-tomcat-9.0.x\webapps\event-management-system.war
 
 Iniciar o Tomcat
 
-Windows:
+**Windows:**
 
 cd C:\apache-tomcat-9.0.x\bin
 
 startup.bat
 
-Acessar o sistema
+**Acessar o sistema**
 
 Abra o navegador e acesse: http://localhost:8080/event-management-system/
