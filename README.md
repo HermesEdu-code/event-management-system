@@ -90,7 +90,9 @@ cd event-management-system
 
 Compilar o projeto com Maven
 
-Na raiz do projeto, execute: mvn clean package
+**Na raiz do projeto, execute:**
+
+mvn clean package
 
 **Resultado esperado:**
 
@@ -102,7 +104,7 @@ O projeto usa H2 Database em modo arquivo. Você precisa criar as tabelas antes 
 
 Iniciar o H2 Console
 
-No terminal, dentro da pasta do projeto:
+**No terminal, dentro da pasta do projeto:**
 
 mvn dependency:copy-dependencies
 
