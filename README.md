@@ -112,7 +112,7 @@ java -cp "target/dependency/h2-1.4.200.jar" org.h2.tools.Console
 
 Isso abrirá o H2 Console no navegador: http://localhost:8082
 
-Na tela do H2 Console, preencha:
+**Na tela do H2 Console, preencha:**
 
 JDBC URL: jdbc:h2:~/eventdb
 
@@ -122,7 +122,7 @@ Password: (deixe em branco)
 
 Executar o script SQL
 
-Cole e execute o seguinte script:
+**Cole e execute o seguinte script:**
 
 CREATE TABLE IF NOT EXISTS instituicao (
     id INT AUTO_INCREMENT PRIMARY KEY,
