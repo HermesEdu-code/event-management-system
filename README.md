@@ -11,10 +11,6 @@ Sistema completo de cadastro e gerenciamento de **Eventos** e **Instituições**
 1. [Funcionalidades](#-funcionalidades)
 2. [Tecnologias Utilizadas](#-tecnologias-utilizadas)
 3. [Pré-requisitos e Downloads](#-pré-requisitos-e-downloads)
-4. [Como Rodar o Projeto](#-como-rodar-o-projeto)
-5. [Configuração do Banco de Dados](#-configuração-do-banco-de-dados)
-6. [Testando o Sistema](#-testando-o-sistema)
-7. [Destaques Técnicos](#-destaques-técnicos)
 
 ---
 
