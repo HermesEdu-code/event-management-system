@@ -67,7 +67,7 @@ Sistema completo de cadastro e gerenciamento de **Eventos** e **Instituições**
 java -version
 
 Saída esperada:
-openjdk version "1.8.0_xxx"
+openjdk version "1.8.0_xxx"```
 
 Apache Maven
-(https://maven.apache.org/download.cgi)
+https://maven.apache.org/download.cgi
