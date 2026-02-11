@@ -63,11 +63,11 @@ Sistema completo de cadastro e gerenciamento de **Eventos** e **Instituições**
 - Instale e configure a variável de ambiente `JAVA_HOME`
 
 **Verificar instalação:**
-```bash
+bash
 java -version
 
 Saída esperada:
-openjdk version "1.8.0_xxx"```
+openjdk version "1.8.0_xxx"
 
 Apache Maven
 https://maven.apache.org/download.cgi
