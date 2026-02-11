@@ -141,11 +141,16 @@ CREATE TABLE IF NOT EXISTS evento (
       FOREIGN KEY (instituicao_id) REFERENCES instituicao(id)
 );
 ##
+
 **Deploy no Tomcat**
- Copiar o arquivo WAR
- Copie o arquivo gerado para a pasta webapps do Tomcat:
- target/event-management-system.war
- C:\apache-tomcat-9.0.x\webapps\event-management-system.war
+
+Copiar o arquivo WAR
+
+Copie o arquivo gerado para a pasta webapps do Tomcat:
+
+target/event-management-system.war
+
+C:\apache-tomcat-9.0.x\webapps\event-management-system.war
 
 **Iniciar o Tomcat**
 **Windows:**
