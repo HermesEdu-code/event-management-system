@@ -123,7 +123,7 @@ Password: (deixe em branco)
 Executar o script SQL
 
 **Cole e execute o seguinte script:**
-
+##
 CREATE TABLE IF NOT EXISTS instituicao (
     id INT AUTO_INCREMENT PRIMARY KEY,
     nome VARCHAR(255) NOT NULL,
@@ -140,7 +140,7 @@ CREATE TABLE IF NOT EXISTS evento (
     CONSTRAINT fk_evento_instituicao
       FOREIGN KEY (instituicao_id) REFERENCES instituicao(id)
 );
-
+##
 Deploy no Tomcat
 
 Copiar o arquivo WAR
