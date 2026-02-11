@@ -1,59 +1,67 @@
-# Sistema de Gestão de Eventos
+# 🎯 Sistema de Gestão de Eventos
 
-Implementação de um sistema de cadastro e gestão de **Eventos** e **Instituições** em Java, utilizando **JSP / Servlets**, **H2 Database** e **Maven**.
+Sistema completo de cadastro e gerenciamento de **Eventos** e **Instituições** desenvolvido em **Java 8**, utilizando **JSP/Servlets**, **H2 Database** e **Maven**.
 
-## Tecnologias e Stack
-
-- **Java 8 (OpenJDK Temurin 1.8)**  
-- **Servlets + JSP (Java EE)**  
-- **Apache Tomcat 9** para execução do `.war`  
-- **Maven** para build e dependências  
-- **H2 Database** (modo arquivo, com `AUTO_SERVER=TRUE`)  
-- **JSTL** nas views  
-- **Bootstrap 5** no frontend  
-- **Scheduler** em Java para atualização automática de status dos eventos
+**Desenvolvido como um desafio de Fullstack Java/React.**
 
 ---
 
-## Funcionalidades Implementadas
+## 📋 Índice
+
+1. [Funcionalidades](#-funcionalidades)
+2. [Tecnologias Utilizadas](#-tecnologias-utilizadas)
+3. [Pré-requisitos e Downloads](#-pré-requisitos-e-downloads)
+4. [Como Rodar o Projeto](#-como-rodar-o-projeto)
+5. [Configuração do Banco de Dados](#-configuração-do-banco-de-dados)
+6. [Testando o Sistema](#-testando-o-sistema)
+7. [Destaques Técnicos](#-destaques-técnicos)
+
+---
+
+## ✨ Funcionalidades
 
 ### Instituições
-
-- CRUD completo de Instituições (`nome`, `tipo`)
-- Tipos pré-definidos (ex.: Confederação, Singular, Central, Cooperativa)
-- Listagem com ações de Editar / Excluir
-- Tela amigável com Bootstrap
+- ✅ CRUD completo (Criar, Listar, Editar, Excluir)
+- ✅ Tipos pré-definidos (Confederação, Singular, Central, Cooperativa)
+- ✅ Interface responsiva com Bootstrap 5
 
 ### Eventos
+- ✅ CRUD completo com relacionamento N:1 com Instituições
+- ✅ Campos: Nome, Data Inicial, Data Final, Instituição
+- ✅ **Status automático** (Ativo/Inativo) baseado no período de vigência
+- ✅ Validações de data (data final não pode ser anterior à inicial)
+- ✅ Exibição do nome da instituição na listagem
 
-- CRUD completo de Eventos:
-  - `nome`
-  - `data_inicial`
-  - `data_final`
-  - `instituicao_id` (relacionamento com Instituição)
-  - `ativo` (status calculado automaticamente)
-- Relação **N:1** com Instituição
-- Listagem de eventos exibindo:
-  - Nome do evento
-  - Nome da instituição
-  - Datas de início e fim
-  - Status (Ativo / Inativo) com badge visual
-- Validações:
-  - Data final não pode ser anterior à data inicial
-  - Associação obrigatória a uma instituição
+### Ativação Automática
+- ✅ **Scheduler em background** que atualiza status dos eventos a cada 1 minuto
+- ✅ Cálculo automático: evento fica **Ativo** quando a data atual está dentro do período de vigência
+- ✅ **Atualização da tela em tempo real** via AJAX (sem necessidade de F5)
 
-### Ativação Automática de Eventos
+---
 
-O status do evento (`ativo`) é determinado automaticamente com base na data atual (`CURRENT_DATE`) e no período de vigência do evento:
+## 🛠 Tecnologias Utilizadas
 
-- **Ativo** quando `CURRENT_DATE` está entre `data_inicial` e `data_final` (inclusive)
-- **Inativo** caso contrário
+- **Java 8** (OpenJDK)
+- **Maven** 3.x
+- **Apache Tomcat 9**
+- **H2 Database** (embedded)
+- **JSP + Servlets** (Java EE)
+- **JSTL** (Java Standard Tag Library)
+- **Bootstrap 5** (frontend)
+- **JavaScript** (AJAX para atualização automática)
 
-Existem duas camadas de atualização:
+---
 
-1. **No momento do cadastro/edição**  
-   O `EventoServlet` calcula o status ao salvar:
+## 📦 Pré-requisitos e Downloads
 
-   ```java
-   LocalDate hoje = LocalDate.now();
-   boolean ativo = !hoje.isBefore(dataInicial) && !hoje.isAfter(dataFinal);
+### 1️⃣ Java 8 JDK
+
+**Download:**  
+👉 [Eclipse Temurin 8 (Adoptium)](https://adoptium.net/temurin/releases/?version=8)
+
+- Escolha a versão para seu sistema operacional
+- Instale e configure a variável de ambiente `JAVA_HOME`
+
+**Verificar instalação:**
+```bash
+java -version
