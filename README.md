@@ -65,3 +65,9 @@ Sistema completo de cadastro e gerenciamento de **Eventos** e **Instituições**
 **Verificar instalação:**
 ```bash
 java -version
+
+Saída esperada:
+openjdk version "1.8.0_xxx"
+
+Apache Maven
+(https://maven.apache.org/download.cgi)
