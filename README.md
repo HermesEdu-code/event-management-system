@@ -63,7 +63,6 @@ Sistema completo de cadastro e gerenciamento de **Eventos** e **Instituições**
 - Instale e configure a variável de ambiente `JAVA_HOME`
 
 **Verificar instalação:**
-bash
 java -version
 
 Saída esperada:
@@ -76,7 +75,9 @@ Verificar instalação:
 mvn -version
 
 Apache Tomcat 9
+
 https://tomcat.apache.org/download-90.cgi
+
 Baixe o arquivo zip (Core: 64-bit Windows zip ou equivalente para seu SO)
 Extraia em uma pasta de sua preferência (ex: C:\apache-tomcat-9.0.x)
 
